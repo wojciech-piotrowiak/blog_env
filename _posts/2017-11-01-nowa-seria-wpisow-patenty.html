@@ -1,24 +1,15 @@
 ---
+title: Nowa seria wpisów - patenty
 layout: post
 status: publish
 published: true
-title: Nowa seria wpis&oacute;w - patenty
-author:
-  display_name: wpiot
-  login: wpiot
-  email: wojciech.piotrowiak+wordpress@gmail.com
-  url: ''
-author_login: wpiot
-author_email: wojciech.piotrowiak+wordpress@gmail.com
-wordpress_id: 86
-wordpress_url: https://www.wojciechpiotrowiak.eu/?p=86
 date: '2017-11-01 14:55:57 +0100'
 date_gmt: '2017-11-01 13:55:57 +0100'
 categories:
 - patenty
-tags: []
 ---
-<p>Od dziś ruszam z nową serią wpis&oacute;w, planuje co tydzień wrzucać kr&oacute;tkie techniczne ciekawostki kt&oacute;re odkryłem podczas pracy, a mogą się przydać innym.</p>
+
+<p>Od dziś ruszam z nową serią wpisów, planuje co tydzień wrzucać proste techniczne ciekawostki które odkryłem podczas pracy, a mogą się przydać innym.</p>
 <h2>1.Bezpieczna iteracja kolekcji:</h2>
 <p>Sporo kodu zawiera proste iteracje typu:</p>
 <pre>if(customers!=null){
@@ -40,7 +31,7 @@ private void printIt(List<String> list) {
 }</pre>
 <p>Dzięki temu null będzie interpretowany jak Optional.empty i wykonanie kodu nigdy nie wejdzie do kodu w ifPresent.</p>
 <h2>2. Obsługa sytuacji wyjątkowych:</h2>
-<p>Pozostając w temacie lambd, kolejny przypadek dotyczy sytuacji gdy musimy sprawdzić czy wartość istnieje i zrobić coś z nią jeśli tak jest lub rzucić wyjątkiem. Kod kt&oacute;ry zastałem wyglądał mniej więcej tak:</p>
+<p>Pozostając w temacie lambd, kolejny przypadek dotyczy sytuacji gdy musimy sprawdzić czy wartość istnieje i zrobić coś z nią jeśli tak jest lub rzucić wyjątkiem. Kod który zastałem wyglądał mniej więcej tak:</p>
 <pre>if(value!=null){
 MyObject.setValue(value);
 }
@@ -60,7 +51,7 @@ optionalInt.orElseThrow(Exception::new);</pre>
 <pre>System.out.println(String.format("%s %s %S","ABC","abc","abc"));</pre>
 <p>Pierwsza i druga opcja drukuje znaki w formie kt&oacute;ra została przekazała, natomiast duże 'S' robi upper case konwersja na wielkie litery.</p>
 <pre>ABC abc ABC</pre>
-<p>Jeśli mamy sporo dublujących się obiekt&oacute;w na wejściu to możemy skorzystać z indeks&oacute;w:</p>
+<p>Jeśli mamy sporo dublujących się obiekt&oacute;w na wejściu to możemy skorzystać z indeksó;w:</p>
 <pre>System.out.println(String.format("%1$s %2$s %2$S","ABC","abc"));</pre>
 <p>Dodając numer parametru i znak dolara zmniejszamy ilość parametr&oacute;w wejściowych.</p>
 <p>Metoda String.format ma wiele innych możliwości, natomiast te dwie szczeg&oacute;lnie zapadły zapadły mi w pamięć.</p>
